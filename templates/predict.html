@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loan Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🏦 Loan Approval Prediction</h1>
+
+        <p class="subtitle">
+            Enter customer details to predict loan approval.
+        </p>
+
+        <form action="/result" method="POST">
+
+            <div class="input-group">
+
+                <label>Age</label>
+
+                <input
+                    type="number"
+                    name="age"
+                    placeholder="Enter Age"
+                    required>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Annual Income</label>
+
+                <input
+                    type="number"
+                    name="income"
+                    placeholder="Enter Income"
+                    required>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Credit Score</label>
+
+                <input
+                    type="number"
+                    name="credit"
+                    placeholder="Enter Credit Score"
+                    required>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Loan Amount</label>
+
+                <input
+                    type="number"
+                    name="loan"
+                    placeholder="Enter Loan Amount"
+                    required>
+
+            </div>
+
+
+            <button class="btn" type="submit">
+                Predict Loan
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
